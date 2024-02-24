@@ -313,14 +313,14 @@ postconf -e 'mailbox_command = /usr/lib/dovecot/deliver'
 systemctl daemon-reload
 
 # Enable fail2ban security for dovecot and postfix.
-[ ! -f /etc/fail2ban/jail.d/emailwiz.local ] && echo "[postfix]
+[ ! -f /etc/fail2ban/jail.d/simplesmtp.local ] && echo "[postfix]
 enabled = true
 [postfix-sasl]
 enabled = true
 [sieve]
 enabled = true
 [dovecot]
-enabled = true" > /etc/fail2ban/jail.d/emailwiz.local
+enabled = true" > /etc/fail2ban/jail.d/simplesmtp.local
 
 # Enable SpamAssassin update cronjob.
 if [ -f /etc/default/spamassassin ]
@@ -370,7 +370,7 @@ echo "NOTE: Elements in the entries might appear in a different order in your re
 $dkimentry
 $dmarcentry
 $spfentry
-$mxentry" > "$HOME/dns_emailwizard"
+$mxentry" > "$HOME/dns_simplesmtp"
 
 printf "\033[31m
  _   _
@@ -393,7 +393,7 @@ $mxentry
 NOTE: You may need to omit the \`.$domain\` portion at the beginning if
 inputting them in a registrar's web interface.
 
-Also, these are now saved to \033[34m~/dns_emailwizard\033[0m in case you want them in a file.
+Also, these are now saved to \033[34m~/dns_simplesmtp\033[0m in case you want them in a file.
 
 Once you do that, you're done! Check the README for how to add users/accounts
 and how to log in.\n"
