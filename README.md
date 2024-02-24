@@ -44,7 +44,7 @@
 	<li>An MX record directing to&nbsp;<code>mail.yourdomain.tld</code>.</li>
 	<li>A TXT record for SPF (to reduce mail spoofing).</li>
 	<li>A TXT record for DMARC policies.</li>
-	<li>A TXT record with your public DKIM key. This record is long and&nbsp;<strong>uniquely generated</strong>&nbsp;while running&nbsp;<code>emailwiz.sh</code>&nbsp;and thus must be added after installation.</li>
+	<li>A TXT record with your public DKIM key. This record is long and&nbsp;<strong>uniquely generated</strong>&nbsp;while running&nbsp;<code>simplesmtp.sh</code>&nbsp;and thus must be added after installation.</li>
 </ol>
 
 <p style="text-align:start">They will look something like this:</p>
@@ -56,7 +56,7 @@ _dmarc.example.org     TXT     v=DMARC1; p=reject; rua=mailto:dmarc@example.org;
 example.org    TXT     v=spf1 mx a: -all
 </code></pre>
 
-<p style="text-align:start">The script will create a file,&nbsp;<code>~/dns_emailwiz</code>&nbsp;that will list our the records for your convenience, and also prints them at the end of the script.</p>
+<p style="text-align:start">The script will create a file,&nbsp;<code>~/dns_simplesmtp</code>&nbsp;that will list our the records for your convenience, and also prints them at the end of the script.</p>
 
 <h3 style="text-align:start">Add a rDNS/PTR record as well!</h3>
 
