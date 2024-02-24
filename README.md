@@ -1,11 +1,13 @@
 # simplesmtp
-Install and configure SMTP server with postfix, dovecot, fail2ban
+<h2>Install and configure SMTP server with postfix, dovecot, fail2ban</h2>
 
-Email server setup script
-
-This script installs an email server with all the features required in the modern web.
-This script installs
-Postfix to send and receive mail.
+<h4>Email server setup script</h4>
+<h2>Installation</h2>
+<p>https://raw.githubusercontent.com/sokkoban/Rainloop-Bash-Script/main/rainloop.sh</p>
+<h4>This script installs an email server with all the features required in the modern web.</h4>
+<p>This script installs<p>
+  <br>
+<p></p>Postfix to send and receive mail.</p>
 Dovecot to get mail to your email client (mutt, Thunderbird, etc.).
 Config files that link the two above securely with native PAM log-ins.
 Spamassassin to prevent spam and allow you to make custom filters.
