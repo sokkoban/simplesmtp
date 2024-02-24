@@ -3,7 +3,7 @@
 
 <h4>Email server setup script</h4>
 <h2>Installation</h2>
-<p>[https://raw.githubusercontent.com/sokkoban/simplesmtp/main/simplesmtp.sh</p>
+<p>https://raw.githubusercontent.com/sokkoban/simplesmtp/main/simplesmtp.sh</p>
 <h2 style="text-align:start">This script installs</h2>
 
 <ul>
