@@ -27,7 +27,7 @@
 <h2 style="text-align:start">Prerequisites for Installation</h2>
 
 <ol>
-	<li>Debian or Ubuntu server. I suited this script for <a href="https://www.vultr.com/?ref=8940911-8H" rel="nofollow" style="box-sizing: border-box; background-color: transparent; color: var(--fgColor-accent, var(--color-accent-fg)); text-decoration: underline; text-underline-offset: 0.2rem;">Linode</a> servers originally, but it seems to work on most other default setups on different VPS providers.</li>
+	<li>Debian or Ubuntu server. I suited this script for <a href="https://www.vultr.com/" rel="nofollow" style="box-sizing: border-box; background-color: transparent; color: var(--fgColor-accent, var(--color-accent-fg)); text-decoration: underline; text-underline-offset: 0.2rem;">Vultr</a> servers originally, but it seems to work on most other default setups on different VPS providers.</li>
 	<li>DNS records that point at least your domain&#39;s&nbsp;<code>mail.</code>&nbsp;subdomain to your server&#39;s IP (IPv4 and IPv6). This is required on initial run for certbot to get an SSL certificate for your&nbsp;<code>mail.</code>&nbsp;subdomain.</li>
 </ol>
 
