@@ -65,7 +65,7 @@ example.org    TXT     v=spf1 mx a: -all
 
 <h2 style="text-align:start">Making new users/mail accounts</h2>
 
-<p style="text-align:start">Let&#39;s say we want to add a user Billy and let him receive mail, run this:</p>
+<p style="text-align:start">Let&#39;s say we want to add a user Info and let him receive mail, run this:</p>
 
 <pre>
 <code>useradd -m -G mail info
@@ -75,7 +75,7 @@ passwd info
 <p style="text-align:start">Any user added to the&nbsp;<code>mail</code>&nbsp;group will be able to receive mail. Suppose a user Cassie already exists and we want to let her receive mail too. Just run:</p>
 
 <pre>
-<code>usermod -a -G mail tibo
+<code>usermod -a -G mail cassie
 </code></pre>
 
 <p style="text-align:start">A user&#39;s mail will appear in&nbsp;<code>~/Mail/</code>. If you want to see your mail while ssh&#39;d in the server, you could just install mutt, add&nbsp;<code>set spoolfile=&quot;+Inbox&quot;</code>&nbsp;to your&nbsp;<code>~/.muttrc</code>&nbsp;and use mutt to view and reply to mail. You&#39;ll probably want to log in remotely though:</p>
